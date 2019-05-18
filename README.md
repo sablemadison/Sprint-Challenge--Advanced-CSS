@@ -34,13 +34,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Both adaptive and fully responsive websites use media queries
+to constrain content and they can both accomodate more devices than fixed websites. However responsive websites rely more heavily
+on responsive units instead of hard coded units. Responsive websites
+take much more time but they also accomodate far more devices than
+adaptive websites because of their dynamicness and flexibile design.
+
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first means that the design is created with the site's mobile
+users in mind more so than desktop users. The site should function well
+on either device, but mobile-first designs will use more min-width queries instead of max-width queries. Also most of the general styling will take place in the mobile version instead of vice versa.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
+It allows us to calculate our desired rem units using the power of 10
+instead of 16.
 4. How would you describe preprocessing to someone new to CSS?
+ Preprocessing allows you to style your content much faster by using different syntax then css and than using a compiler to
+ compile the code into css. It will make your life easier by allowing you to nest your styling when you use selectors. If you are used to html it will be almost intuitive.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is nesting. I find it easier
+to use nested selectors when I style because I make less mistakes.
+
+Parametric mixins give me the most trouble if I am changing the
+variable value. The syntax starts to confuse me because it reminds me of JavaScript but not.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
